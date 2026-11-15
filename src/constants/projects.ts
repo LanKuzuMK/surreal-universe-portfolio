@@ -1,0 +1,331 @@
+import type { ProjectItem, DestinationInfo, SkillPillar, MilestoneItem } from '../types';
+
+export const DESTINATIONS: DestinationInfo[] = [
+  {
+    id: 'origin',
+    index: '01',
+    name: 'The Origin',
+    title: 'THE DREAM THRESHOLD',
+    subtitle: 'A Legendary World Above the Cloud Ocean',
+  },
+  {
+    id: 'sanctuary',
+    index: '02',
+    name: "The Creator's Sanctuary",
+    title: 'SACRED GROVE',
+    subtitle: 'Tactile Authenticity, Sovereign Craft & Personal Axiom',
+  },
+  {
+    id: 'skills',
+    index: '03',
+    name: 'The Skill Kingdom',
+    title: 'THE FIVE REALMS',
+    subtitle: 'Real-Time 3D, Spatial Vision & Architecture',
+  },
+  {
+    id: 'projects',
+    index: '04',
+    name: 'The Project Islands',
+    title: 'CURATED ARCHIVE',
+    subtitle: 'Living 3D Artifacts & Flagship Digital Dimensions',
+  },
+  {
+    id: 'experience',
+    index: '05',
+    name: 'The Experience Castle',
+    title: 'MONUMENT OF MILESTONES',
+    subtitle: 'Proven Engineering Standards & Historical Records',
+  },
+  {
+    id: 'gate',
+    index: '06',
+    name: 'The Dream Gate',
+    title: 'COMMISSIONS & CONVERGENCE',
+    subtitle: 'Direct Transmission Across the Celestial Void',
+  },
+];
+
+export const PROJECTS: ProjectItem[] = [
+  {
+    id: 'read-me-by-jack',
+    title: 'Read Me by Jack — 3D Studio',
+    category: '3D Web & WebGL',
+    year: '2023 - 2026',
+    role: 'Lead 3D Technologist & Graphic Designer',
+    description: 'An interactive photorealistic 3D stationery and codex environment built with custom Three.js lighting and physics-based scroll choreography.',
+    longDescription: 'A direct repudiation of generic web portfolios. The visitor steps onto a personal architectural desk where a bespoke 3D notebook, drafting instruments, and lighting respond in real-time to scroll momentum and mouse velocity. Every page turn has vertex-displaced paper physics.',
+    philosophicalContext: 'A physical testament to the craft: tactile desktop memory elevated into living browser architecture.',
+    liveUrl: 'https://read-me-by-jack.vercel.app/',
+    tags: ['Three.js', 'WebGL', 'GSAP', 'Lenis', 'Tactile 3D', 'Editorial'],
+    previewGradient: 'from-emerald-900/40 via-teal-950/60 to-[#0e111a]',
+    metrics: [
+      { label: 'Frame Rate', value: '60-120 FPS' },
+      { label: '3D Fidelity', value: 'Physical PBR' },
+      { label: 'Interaction', value: 'Dynamic Spline' },
+    ],
+    palette: ['#0f766e', '#00f0ff', '#fcd34d', '#0e111a'],
+    features: [
+      'Interactive 3D book with realistic paper edge slicing and leaf turns',
+      'Ambient desk environment with dynamic dark/light day-night transition',
+      'Smooth camera tracking choreographed with custom Lenis inertial damping',
+      'Zero generic templates — bespoke typography and layout hierarchy'
+    ],
+  },
+  {
+    id: 'mk-vault',
+    title: 'MK Vault — Royal Ledger Archive',
+    category: 'Full-Stack Architecture',
+    year: '2024',
+    role: 'System Architect & Creative Director',
+    description: 'The monumental project archive and living catalog preserving 20+ applications, engineering systems, and experimental artifacts.',
+    longDescription: 'The sovereign repository of MK. Houses the complete matrix of shipped applications across web, native mobile, and systems engineering. Features high-density tabular telemetry, dynamic filtration, and high-speed asset previews.',
+    philosophicalContext: 'An impenetrable archive where every line of code represents a conquered horizon.',
+    liveUrl: 'https://lankuzumk.github.io/mk-vault/',
+    tags: ['Catalog System', 'Interactive UI', 'Performance', 'Vite', 'TypeScript'],
+    previewGradient: 'from-amber-950/40 via-slate-900/60 to-[#0e111a]',
+    metrics: [
+      { label: 'Archived Repos', value: '20+ Systems' },
+      { label: 'Load Latency', value: '< 200ms' },
+      { label: 'Design System', value: 'Royal Dark' },
+    ],
+    palette: ['#d4af37', '#f8fafc', '#0284c7', '#0e111a'],
+    features: [
+      'Engineered project ledger with instant search and category indexing',
+      'Comprehensive telemetry tags and direct live deployment links',
+      'Custom SVG crest and royal aesthetic iconography',
+      'High-performance static bundle footprint'
+    ],
+  },
+  {
+    id: 'gesture-on-air',
+    title: 'Gesture On Air',
+    category: 'Mobile & Computer Vision',
+    year: '2024',
+    role: 'Creative Technologist & ML Engineer',
+    description: 'Real-time spatial hand-tracking and touchless gesture control system operating entirely in the browser using WebGL and computer vision.',
+    longDescription: 'Shatters the boundary of the physical screen. Allows users to manipulate 3D geometry, navigate spatial canvas dimensions, and sculpt digital particles in mid-air using only standard camera inputs.',
+    philosophicalContext: 'The hands are the original human instruments; code merely gives them the power to sculpt light.',
+    liveUrl: 'https://gesture-on-air.vercel.app/',
+    tags: ['Computer Vision', 'Hand Tracking', 'Spatial UI', 'MediaPipe', 'Three.js'],
+    previewGradient: 'from-cyan-950/50 via-indigo-950/50 to-[#0e111a]',
+    metrics: [
+      { label: 'Tracking Speed', value: '60 FPS' },
+      { label: 'Latency', value: '< 15ms' },
+      { label: 'Platform', value: 'Pure Web' },
+    ],
+    palette: ['#00f0ff', '#8b5cf6', '#10b981', '#0e111a'],
+    features: [
+      '21-landmark 3D hand skeleton tracking with zero backend latency',
+      'Physics-based spatial manipulation of virtual light fields',
+      'Gesture vocabulary for zoom, rotate, sculpt, and menu trigger',
+      'Adaptive camera calibration for challenging low-light environments'
+    ],
+  },
+  {
+    id: 'gundam-strike-protocol',
+    title: 'Gundam Strike Protocol',
+    category: 'Avant-Garde Graphic Design',
+    year: '2024',
+    role: 'Lead HUD & UI Art Director',
+    description: 'High-octane aerospace mech HUD interface featuring cinematic mechanical telemetry, coordinate radar, and tactical typography.',
+    longDescription: 'Inspired by hard sci-fi anime engineering and military aviation glass cockpits. Synthesizes dense micro-typography, vector radar reticles, and real-time weapon state telemetry into an exhilarating graphic experience.',
+    philosophicalContext: 'Where graphic design meets aerospace engineering — every stroke has tactical purpose.',
+    liveUrl: 'https://lankuzumk.github.io/gundam-strike-protocol/',
+    tags: ['Mech HUD', 'Editorial Design', 'Vector Radar', 'Typography', 'Audio Sync'],
+    previewGradient: 'from-rose-950/40 via-red-950/30 to-[#0e111a]',
+    metrics: [
+      { label: 'HUD Elements', value: '45+ Vectors' },
+      { label: 'Audio Engine', value: 'Web Audio API' },
+      { label: 'Aesthetic', value: 'Hard Sci-Fi' },
+    ],
+    palette: ['#ff453a', '#00f0ff', '#ffffff', '#0e111a'],
+    features: [
+      'Authentic military aviation typography with micro-graticules',
+      'Interactive radar sweep with real-time target ping calculation',
+      'Cinematic boot sequence with bespoke mechanical sound synthesis',
+      'Responsive tactical layout built with pure vector math'
+    ],
+  },
+  {
+    id: 'code-cultivator',
+    title: 'Code Cultivator — Celestial Progression',
+    category: '3D Web & WebGL',
+    year: '2023 - 2024',
+    role: 'Creative Technologist & Concept Artist',
+    description: 'A martial Dao progression platform gamifying engineering breakthroughs into mythical celestial breakthroughs and astral spirit fire.',
+    longDescription: 'Bridges traditional Eastern cultivation mythology with software engineering mastery. Developers progress from Qi Condensation through Tribulation, igniting different hues of spiritual spirit fire as code milestones are reached.',
+    philosophicalContext: 'Code is not mere syntax; it is internal alchemy and cultivation of the digital spirit.',
+    liveUrl: 'https://lankuzumk.github.io/code-cultivator/',
+    tags: ['Daoist Cultivation', 'Gamified UI', 'Custom Shaders', 'Xianxia', 'Three.js'],
+    previewGradient: 'from-emerald-950/50 via-teal-950/40 to-[#0e111a]',
+    metrics: [
+      { label: 'Realms', value: '9 Tiers' },
+      { label: 'Visual FX', value: 'GLSL Spirit Fire' },
+      { label: 'Spirit Beasts', value: '4 Guardians' },
+    ],
+    palette: ['#00f0ff', '#ffd700', '#9945ff', '#0e111a'],
+    features: [
+      'Procedural celestial spirit flame shader with turbulence controls',
+      'Nine cultivation realms with interactive breakthrough trials',
+      'Bespoke Xianxia iconography and gold-leaf parchment textures',
+      'Persistent local progression storage with cloud synchronization'
+    ],
+  },
+  {
+    id: 'student-os',
+    title: 'Student OS — Academic Workspace',
+    category: 'Full-Stack Architecture',
+    year: '2023 - 2024',
+    role: 'Product Architect & Full-Stack Engineer',
+    description: 'An all-in-one productivity operating system integrating curriculum scheduling, grade telemetry, and intelligent revision workflows.',
+    longDescription: 'Designed to solve cognitive overload in higher education. Replaces fragmented spreadsheets and notes with a cohesive, beautifully formatted workspace platform featuring real-time GPA projections and study timer analytics.',
+    philosophicalContext: 'Order out of chaos: empowering learners through thoughtful spatial organization.',
+    liveUrl: 'https://student-os.vercel.app/',
+    tags: ['Workspace OS', 'React', 'Productivity', 'Tailwind', 'Local-First'],
+    previewGradient: 'from-blue-950/40 via-sky-950/30 to-[#0e111a]',
+    metrics: [
+      { label: 'Active Modules', value: '8 Subsystems' },
+      { label: 'Storage', value: 'IndexedDB Offline' },
+      { label: 'Efficiency', value: '+40% Focus' },
+    ],
+    palette: ['#38bdf8', '#818cf8', '#f8fafc', '#0e111a'],
+    features: [
+      'Unified schedule timeline with assignment deadline countdowns',
+      'Dynamic GPA simulator with weighted grade boundary calculations',
+      'Distraction-free focus timer synchronized with ambient soundscapes',
+      'Full offline capability with automatic cloud reconciliation'
+    ],
+  },
+  {
+    id: 'lunara-care',
+    title: 'Lunara Feminine Care — Luxury Editorial',
+    category: 'Avant-Garde Graphic Design',
+    year: '2024',
+    role: 'Lead Digital Art Director & Brand Designer',
+    description: 'High-end luxury editorial e-commerce experience featuring organic fluid motion, soft atmospheric lighting, and pristine typography.',
+    longDescription: 'A study in elegance and serenity. Elevates feminine wellness products into museum-grade sculptural artifacts. Features liquid glass shaders, delicate peach and rose palettes, and serene scroll pacing.',
+    philosophicalContext: 'Softness is not weakness; it is the ultimate expression of refined power.',
+    liveUrl: 'https://lunara-care.vercel.app/',
+    tags: ['Brand Identity', 'Editorial Design', 'E-Commerce', 'Fluid Motion', 'Typography'],
+    previewGradient: 'from-pink-950/40 via-rose-950/30 to-[#0e111a]',
+    metrics: [
+      { label: 'Design Tier', value: 'Haute Couture' },
+      { label: 'Scroll Pacing', value: 'Sub-second Lenis' },
+      { label: 'Conversion', value: '+28% Lift' },
+    ],
+    palette: ['#f472b6', '#fed7aa', '#ffffff', '#0e111a'],
+    features: [
+      'Sculptural 3D product view with real-time liquid meniscus reflections',
+      'Ultra-refined editorial typography inspired by high fashion publications',
+      'Custom cart drawer with smooth kinetic easing',
+      'Sustainable packaging storytelling with interactive materials breakdown'
+    ],
+  },
+  {
+    id: 'skybound-knight',
+    title: 'Skybound Knight Play — 3D Fantasy Game',
+    category: '3D Web & WebGL',
+    year: '2024',
+    role: 'Lead Game Developer & 3D Artist',
+    description: 'Interactive 3D web action fantasy game environment running high-performance real-time character animation, lighting, and combat arenas.',
+    longDescription: 'Brings console-grade fantasy action directly to standard web browsers. Players control a winged knight navigating floating sky castles, parrying enemy attacks, and solving environmental light puzzles.',
+    philosophicalContext: 'The browser is no longer a document viewer; it is an infinite gaming console.',
+    liveUrl: 'https://skybound-knight.vercel.app/',
+    tags: ['WebGL Game', 'Three.js', 'Physics', 'Character Controller', 'Optimization'],
+    previewGradient: 'from-indigo-950/50 via-purple-950/40 to-[#0e111a]',
+    metrics: [
+      { label: 'Frame Rate', value: 'Solid 60 FPS' },
+      { label: 'Input Latency', value: '< 8ms' },
+      { label: 'Physics', value: 'Rapier 3D' },
+    ],
+    palette: ['#818cf8', '#c084fc', '#fcd34d', '#0e111a'],
+    features: [
+      'High-performance 3D character controller with double-jump and glide physics',
+      'Dynamic day/night lighting transitions with soft directional shadows',
+      'Optimized low-draw-call scene hierarchy running smoothly on mobile GPUs',
+      'Dynamic spatial audio engine with reactive environmental reverberation'
+    ],
+  },
+];
+
+export const PILLARS: SkillPillar[] = [
+  {
+    id: '3d-webgl',
+    title: 'Real-Time 3D & Custom Shaders',
+    subtitle: 'Three.js, WebGL 2.0 & GLSL Lighting',
+    coreTech: ['Three.js', 'WebGL 2.0', 'GLSL Shaders', 'Raymarching', 'PBR Materials', 'GPU Particles'],
+    philosophy: 'Transforming flat web pages into living, photorealistic three-dimensional spatial realms that respect hardware boundaries while pushing visual spectacle.',
+    metrics: '60–120 FPS on standard desktop & modern mobile',
+  },
+  {
+    id: 'spatial-vision',
+    title: 'Spatial Computing & Computer Vision',
+    subtitle: 'Touchless Interaction & MediaPipe Tracking',
+    coreTech: ['MediaPipe', 'Hand Tracking', 'Spatial Math', 'WebXR', 'Gesture Navigation', 'OpenCV.js'],
+    philosophy: 'Liberating human interaction from the confines of mice and touchscreens, allowing users to sculpt virtual matter and command cameras in mid-air.',
+    metrics: '< 15ms optical tracking latency',
+  },
+  {
+    id: 'graphic-design',
+    title: 'Avant-Garde Graphic Design & Typography',
+    subtitle: 'Swiss Precision Meets Cinematic Worldbuilding',
+    coreTech: ['Editorial Layouts', 'Brand Architecture', 'Bespoke Type Systems', 'Poster Craft', 'Vector Systems'],
+    philosophy: 'Crafting unyielding visual hierarchy where typography commands the screen, negative space commands the rhythm, and every color carries emotional weight.',
+    metrics: 'Zero generic templates • 100% bespoke',
+  },
+  {
+    id: 'fullstack-arch',
+    title: 'Full-Stack Web Architecture',
+    subtitle: 'Modern React 19, TypeScript & High-Performance Pipelines',
+    coreTech: ['React 19', 'TypeScript', 'Vite', 'Tailwind CSS', 'Node.js', 'PostgreSQL', 'Cloud Infrastructure'],
+    philosophy: 'Industrial-strength system architecture engineered for sub-second page loads, rock-solid stability, offline resilience, and clean maintainability.',
+    metrics: 'Sub-200ms initial load & zero runtime exceptions',
+  },
+  {
+    id: 'cross-platform',
+    title: 'Cross-Platform Mobile Ecosystems',
+    subtitle: 'Flutter, Capacitor & Native Device Telemetry',
+    coreTech: ['Flutter', 'Dart', 'Capacitor', 'Android Studio', 'Native Plugins', 'Offline Sync'],
+    philosophy: 'Packaging sovereign experiences across desktop browsers, iOS, and Android without sacrificing native frame rates or platform idioms.',
+    metrics: 'Universal multi-platform codebase parity',
+  },
+];
+
+export const MILESTONES: MilestoneItem[] = [
+  {
+    year: '2024 — PRESENT',
+    role: 'Lead Creative Technologist & Spatial Architect',
+    domain: 'Independent Studio • Global Remote',
+    title: 'Pioneering Spatial 3D Web & Immersive Worlds',
+    description: 'Directing the architecture and development of next-generation 3D web environments, touchless hand-tracking systems, and luxury digital flagships.',
+    highlights: [
+      'Architected Read Me by Jack with custom vertex-displaced 3D paper physics',
+      'Engineered Gesture On Air touchless spatial control running at 60 FPS in-browser',
+      'Consolidated the MK Vault archive cataloging 20+ applications and systems'
+    ],
+  },
+  {
+    year: '2023 — 2024',
+    role: 'Full-Stack Systems Architect & Game Developer',
+    domain: 'Software Engineering & Interactive Media',
+    title: 'High-Density Workspace Systems & 3D Web Action',
+    description: 'Designed and deployed scalable full-stack applications, gamified engineering platforms, and optimized 3D browser games.',
+    highlights: [
+      'Built Student OS with local-first IndexedDB persistence and grade simulation',
+      'Developed Skybound Knight Play 3D action game with physics controllers',
+      'Created Code Cultivator celestial progression platform with GLSL shaders'
+    ],
+  },
+  {
+    year: '2021 — 2023',
+    role: 'Art Director & Brand Identity Designer',
+    domain: 'Graphic Design & Digital Publishing',
+    title: 'Avant-Garde Typography & Luxury Brand Systems',
+    description: 'Led creative direction for bespoke brand identities, high-fashion editorial web concepts, and aerospace interface systems.',
+    highlights: [
+      'Art-directed Lunara Care luxury e-commerce with liquid glass aesthetics',
+      'Designed Gundam Strike Protocol aerospace HUD interface and vector typography',
+      'Established the sovereign Lan Kuzu Studio visual design language'
+    ],
+  },
+];
