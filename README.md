@@ -14,7 +14,7 @@
   Engineered with real-time WebGL, procedural terrain displacement, 120 FPS decoupled kinetic choreography, and liquid-glass morphic UI.
 </p>
 
-[**Explore Live Demo**](#) • [**Architecture**](#-architectural-highlights) • [**Destinations**](#-the-six-destinations) • [**Quick Start**](#-getting-started)
+[**Explore Live Demo**](https://surreal-universe-portfolio.vercel.app) • [**Architecture**](#-architectural-highlights) • [**Destinations**](#-the-six-destinations) • [**Quick Start**](#-getting-started)
 
 </div>
 
